@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 1rem;
+}
+
+.contanier {
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contanier .section-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20vw;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  position: relative;
+}
+
+.section-blocks {
+  display: block;
+  height: 20vw;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+footer {
+  height: 10rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+footer .frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80px;
+  width: 90vw;
+  max-width: 500px;
+  align-items: center;
+  position: relative;
+}
+
+.icon-box {
+  height: 2.2em;
+  width: 2.2em;
+  font-size: 16px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(42, 52, 84);
+}
+
+.little-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem auto;
+  position: relative;
+  font-size: 0.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 40px;
+  width: 200px;
+  align-items: center;
+  left: 0;
+  right: 0;
+  cursor: help;
+}/*# sourceMappingURL=layout.css.map */

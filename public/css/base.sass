@@ -1,0 +1,139 @@
+$bg: rgb(239, 239, 239)
+$blue-white: #f1f2f6
+$back-color: #EBECF0
+$gray-black: #444
+
+body
+  justify-content: center
+  margin: 0
+  color: $gray-black
+  background-color: $bg
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-tap-highlight-color: transparent
+
+  // Remove Selecting
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+
+.light-flat
+  background: $bg
+  box-shadow: -10px -10px 30px #fff, 10px 10px 30px #aeaec040
+
+.light-convex
+  border-radius: 1rem
+  background: $bg
+  box-shadow: -10px -10px 30px #fff, 10px 10px 30px #aeaec040, inset -10px -10px 10px #aeaec025, inset 10px 10px 10px #fff
+
+.light-concave
+  border-radius: 1rem
+  background: $bg
+  box-shadow: inset -10px -10px 10px #ffffff70, inset 10px 10px 10px #aeaec020
+
+.embosed-flat
+  background: $bg
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001
+  transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81)
+  border-radius: 10px
+
+.icon-box
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-tap-highlight-color: transparent
+
+  &:hover
+    box-shadow: -5px -5px 15px #fff, 5px 5px 15px #aeaec083
+
+  &:active
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255,255,255,.5), inset 4px 4px 6px 0 rgba(116, 125, 136, .3)
+
+.btn:focus
+  outline: none !important
+
+.neumorphic-btn
+  font-size: 20px
+  border: none
+  padding: 10px 40px
+  border-radius: 40px
+  color: #6D7587
+  background-color: var(--back-color)
+  /*box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.3), 
+   -2px -2px 4px 2px rgba(255, 255, 255, 1), 
+   inset -14px -14px 20px -10px rgba(0, 0, 0, 0.1),
+   inset 14px 14px 20px -10px rgba(255, 255, 255, 0.5) !important;  */
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0) !important
+  transition: box-shadow .25s ease !important
+
+.neumorphic-btn:active
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important
+
+.btn-clicky
+  display: block
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-tap-highlight-color: transparent
+  padding: 1em 2.5em
+  background: $bg
+  border: none
+  border-radius: .25rem
+  font-size: .8rem
+  font-weight: 500
+  letter-spacing: .2rem
+  text-align: center
+  outline: none
+  cursor: pointer
+  transition: .2s ease-in-out
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, .7), -6px -6px 10px rgba(255, 255, 255, .5), 6px 6px 8px rgba(255, 255, 255, .075), 6px 6px 10px rgba(0, 0, 0, .15)
+
+  @media (min-width: 768px) 
+    padding: 1.5em 5em
+    border-radius: .5rem
+    font-size: 1rem
+
+
+  &:hover
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px rgba(0, 0, 0, .1)
+
+  &:active
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7), inset -2px -2px 4px rgba(255, 255, 255, .5), inset 2px 2px 2px rgba(255, 255, 255, .075), inset 2px 2px 4px rgba(0, 0, 0, .15)
+
+
+
+.m_button
+  margin: 2rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  cursor: pointer
+  background-color: #eeeeee
+  width: 80px
+  height: 80px
+  border-radius: 10px
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001
+  transition: box-shadow 0.6s cubic-bezier(.79,.21,.06,.81)
+  
+  span
+    background-color: lightcoral
+    box-shadow: 0px 0px 10px 0px rgba(240,128,128,0.3)
+    width: 40px
+    height: 4px
+    border-radius: 4px
+    margin: 3px 0px 3px 0px
+    transition: margin 0.4s cubic-bezier(.79,.21,.06,.81),transform 0.4s cubic-bezier(.79,.21,.06,.81)
+
+  span:nth-child(2)
+    transform-origin: 50% 50%
+
+.active .m_button
+  box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001, inset -7px -7px 20px 0px #fff9, inset -4px -4px 5px 0px #fff9, inset 7px 7px 20px 0px #0003, inset 4px 4px 5px 0px #0001
+
+  span
+    margin: -2px
+  span:nth-child(1)
+    transform: rotate(-45deg)
+  span:nth-child(2)
+    transform: scale(0)
+  span:nth-child(3)
+    transform: rotate(45deg)
