@@ -18,7 +18,8 @@ button {
   padding: 1rem;
   margin: 1rem auto;
   width: 80vw;
-  display: flex;
+  max-width: 50em;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,7 +30,6 @@ button {
   justify-content: space-around;
   height: 20vw;
   width: 100%;
-  max-width: 500px;
   align-items: center;
   position: relative;
 }
@@ -90,4 +90,8 @@ footer .frame {
   left: 0;
   right: 0;
   cursor: help;
+}
+
+.bottom {
+  margin-bottom: 10rem;
 }/*# sourceMappingURL=layout.css.map */

@@ -1,12 +1,9 @@
-$bg: rgb(239, 239, 239)
-$blue-white: #f1f2f6
-$back-color: #EBECF0
-$gray-black: #444
+@import 'variables'
 
 body
   justify-content: center
   margin: 0
-  color: $gray-black
+  color: $font-color
   background-color: $bg
   -webkit-tap-highlight-color: rgba(0,0,0,0)
   -webkit-tap-highlight-color: transparent
@@ -90,13 +87,13 @@ body
     border-radius: .5rem
     font-size: 1rem
 
-
   &:hover
     box-shadow: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px rgba(0, 0, 0, .1)
-
+    color: rgba($font-color, 0.9)
+    
   &:active
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7), inset -2px -2px 4px rgba(255, 255, 255, .5), inset 2px 2px 2px rgba(255, 255, 255, .075), inset 2px 2px 4px rgba(0, 0, 0, .15)
-
+    color: rgba($font-color, 0.7)
 
 
 .m_button
