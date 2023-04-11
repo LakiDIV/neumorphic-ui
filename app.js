@@ -20,6 +20,7 @@ function serveHtmlFile(route, filePath) {
 
 serveHtmlFile("/", "/index.html");
 serveHtmlFile("/logo", "/logo.html");
+serveHtmlFile("/alpha", "/alpha.html");
 
 
 
