@@ -7,6 +7,7 @@ body,
 html
     justify-content: center
     align-items: center
+    width: 100%
 
 button
     margin: 1rem
@@ -21,22 +22,26 @@ button
     justify-content: center
     align-items: center
 
-    .section-flex
-        display: flex
-        flex-direction: row
-        justify-content: space-around
-        height: 20vw
-        width:100%
-        align-items: center
-        position: relative
+    section
+        min-height: 8rem
+        padding: 1rem
 
-.section-blocks 
-    display: block
-    height: 20vw
-    width: 100%
-    max-width: 500px
-    text-align: center
+        .section-flex
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            height: 20vw
+            width:100%
+            align-items: center
+            position: relative
 
+        .section-blocks 
+            display: block
+            height: 20vw
+            width: 100%
+            max-width: 500px
+            text-align: center
+            overflow: hidden
 
 
 footer

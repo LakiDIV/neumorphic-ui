@@ -8,6 +8,7 @@ body,
 html {
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 button {
@@ -24,7 +25,11 @@ button {
   justify-content: center;
   align-items: center;
 }
-.contanier .section-flex {
+.contanier section {
+  min-height: 8rem;
+  padding: 1rem;
+}
+.contanier section .section-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -33,13 +38,13 @@ button {
   align-items: center;
   position: relative;
 }
-
-.section-blocks {
+.contanier section .section-blocks {
   display: block;
   height: 20vw;
   width: 100%;
   max-width: 500px;
   text-align: center;
+  overflow: hidden;
 }
 
 footer {
