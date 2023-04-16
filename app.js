@@ -9,8 +9,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-
-
 // Serve HTML files
 function serveHtmlFile(route, filePath) {
   app.get(route, function (req, res) {
@@ -21,7 +19,6 @@ function serveHtmlFile(route, filePath) {
 serveHtmlFile("/", "/index.html");
 serveHtmlFile("/logo", "/logo.html");
 serveHtmlFile("/alpha", "/alpha.html");
-
 
 
 
