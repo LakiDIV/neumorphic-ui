@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files from the 'public' directory
 app.use(express.static("public"));
 
-
 // Serve HTML files
 function serveHtmlFile(route, filePath) {
   app.get(route, function (req, res) {
