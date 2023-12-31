@@ -1,0 +1,40 @@
+.m_menu {
+  opacity: 0; /* Initially set opacity to 0 */
+  display: flex;
+  padding: 1rem;
+  margin: 1rem 0;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.m_menu.visible {
+  opacity: 1; /* Set opacity to 1 when the "visible" class is applied */
+}
+
+.m_menu button {
+  display: block;
+  width: 100%;
+  margin: 1rem;
+  opacity: 0; /* Initially set opacity to 0 for buttons */
+  transform: translateY(20px); /* Initially move buttons down */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add transitions for opacity and transform */
+}
+
+.m_menu.visible button {
+  opacity: 1; /* Set opacity to 1 for buttons when the "visible" class is applied */
+  transform: translateY(0); /* Move buttons up to their original position */
+  transition-delay: 0.2s; /* Add a delay for each button */
+}
+
+.m_menu.visible button:nth-child(2) {
+  transition-delay: 0.4s; /* Adjust delay for the second button */
+}
+
+.m_menu.visible button:nth-child(3) {
+  transition-delay: 0.6s; /* Adjust delay for the third button */
+}
