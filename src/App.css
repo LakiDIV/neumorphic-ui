@@ -87,6 +87,15 @@ body {
   box-shadow: 5px 5px 15px #d0d0d0, -5px -5px 15px #ffffff;
 }
 
+@media (prefers-color-scheme: dark) {
+  .bento-item {
+    background-color: var(--background-theme);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #3a3a3a, -5px -5px 15px var(--background-theme);
+  }
+}
+
 .bento-item h1,
 .bento-item h2 {
   margin-top: 0;
