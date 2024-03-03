@@ -1,4 +1,7 @@
 # Neomorphic Design
+
+![image](https://github.com/LakiDIV/neumorphic-ui/assets/51769692/cb4c70b5-e209-4b3c-810e-98f884887c71)
+
 Creating a cutting-edge UI library for the modern web involves leveraging design concepts like neomorphic design, while seamlessly integrating them with other contemporary design trends to establish a truly futuristic aesthetic.
 
 
