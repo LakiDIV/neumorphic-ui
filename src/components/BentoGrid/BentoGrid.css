@@ -37,3 +37,9 @@
     grid-column: span 1;
   }
 }
+
+.bento-title {
+  margin: 0 0 10px; /* Add margin below the title */
+  font-size: 1.5em; /* Adjust font size as needed */
+  color: var(--title-color, #000); /* Use a variable for color or default to black */
+}

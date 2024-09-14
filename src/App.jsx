@@ -34,15 +34,13 @@ function App() {
 
       <h1>Neomorphic Design Showcase</h1>
       <BentoGrid>
-        <BentoGrid.Item>
-          <h2>What is Neomorphism?</h2>
+        <BentoGrid.Item title="What is Neomorphism?">
           <p>
             Neomorphism is a design trend that combines flat design with
             skeuomorphism, creating a soft, extruded plastic look.
           </p>
         </BentoGrid.Item>
-        <BentoGrid.Item wide>
-          <h2>Key Characteristics</h2>
+        <BentoGrid.Item title="Key Characteristics" wide>
           <ul>
             <li>Soft shadows</li>
             <li>Subtle contrast</li>
@@ -51,35 +49,43 @@ function App() {
           </ul>
         </BentoGrid.Item>
         <BentoGrid.Item>
-          <h2>Pros</h2>
-          <ul>
-            <li>Modern and sleek appearance</li>
-            <li>Enhances UI depth</li>
-            <li>Creates a tactile feel</li>
-          </ul>
+          <div className="card">
+            <h2>Pros</h2>
+            <ul>
+              <li>Modern and sleek appearance</li>
+              <li>Enhances UI depth</li>
+              <li>Creates a tactile feel</li>
+            </ul>
+          </div>
         </BentoGrid.Item>
         <BentoGrid.Item>
-          <h2>Cons</h2>
-          <ul>
-            <li>Accessibility challenges</li>
-            <li>Limited color palette</li>
-            <li>Potential for overuse</li>
-          </ul>
+          <div className="card">
+            <h2>Cons</h2>
+            <ul>
+              <li>Accessibility challenges</li>
+              <li>Limited color palette</li>
+              <li>Potential for overuse</li>
+            </ul>
+          </div>
         </BentoGrid.Item>
         <BentoGrid.Item wide>
-          <h2>Best Practices</h2>
-          <p>
-            Use neomorphism sparingly, focus on important UI elements, and
-            ensure sufficient contrast for accessibility.
-          </p>
+          <div className="card">
+            <h2>Best Practices</h2>
+            <p>
+              Use neomorphism sparingly, focus on important UI elements, and
+              ensure sufficient contrast for accessibility.
+            </p>
+          </div>
         </BentoGrid.Item>
         <BentoGrid.Item>
-          <h2>Tools</h2>
-          <ul>
-            <li>Figma</li>
-            <li>Sketch</li>
-            <li>CSS generators</li>
-          </ul>
+          <div className="card">
+            <h2>Tools</h2>
+            <ul>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>CSS generators</li>
+            </ul>
+          </div>
         </BentoGrid.Item>
       </BentoGrid>
       <SocialFloating />
