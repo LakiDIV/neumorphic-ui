@@ -54,3 +54,17 @@
 .active .m_button span:nth-child(3) {
   transform: rotate(45deg);
 }
+
+@media screen and (max-width: 768px) {
+  .m_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .m_button span {
+    width: 30px;
+  }
+}
