@@ -1,40 +1,24 @@
 import React from "react";
 import "./App.css";
-import SocialFloating from "./components/Footers/SocialFloating";
-import HamburgerBtn from "./components/HamburgerMenu/HamburgerBtn";
-import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
+
 import BentoGrid from "./components/BentoGrid/BentoGrid";
+import InputField from "./components/InputField/InputField";
 
 function App() {
   return (
     <div className="App">
-      <ThemeToggle />
-      <HamburgerBtn />
-
       {/* Input and Button */}
-      <div className="contanier embosed-flat">
+      <div className="bento embosed-flat">
         <div className="section light-concave">
-          <input
-            placeholder="Email"
-            className="light-concave"
-            type="text"
-            name=""
-            id=""
-          />
-          <input
-            placeholder="Password"
-            className="light-concave"
-            type="password"
-            name=""
-            id=""
-          />
+          <InputField placeholder="Email" type="text" />
+          <InputField placeholder="Password" type="password" />
           <button className="btn-clicky">LOGIN</button>
         </div>
       </div>
 
-      <h1>Neomorphic Design Showcase</h1>
+      <h1 style={{ textAlign: "center" }}>Neomorphic Design Showcase</h1>
       <BentoGrid>
-        <BentoGrid.Item title="What is Neomorphism?">
+        <BentoGrid.Item title="What is Neomorphism?" wide>
           <p>
             Neomorphism is a design trend that combines flat design with
             skeuomorphism, creating a soft, extruded plastic look.
@@ -48,9 +32,8 @@ function App() {
             <li>Minimalist approach</li>
           </ul>
         </BentoGrid.Item>
-        <BentoGrid.Item>
+        <BentoGrid.Item title="Pros">
           <div className="card">
-            <h2>Pros</h2>
             <ul>
               <li>Modern and sleek appearance</li>
               <li>Enhances UI depth</li>
@@ -58,9 +41,8 @@ function App() {
             </ul>
           </div>
         </BentoGrid.Item>
-        <BentoGrid.Item>
+        <BentoGrid.Item title="Cons">
           <div className="card">
-            <h2>Cons</h2>
             <ul>
               <li>Accessibility challenges</li>
               <li>Limited color palette</li>
@@ -68,18 +50,16 @@ function App() {
             </ul>
           </div>
         </BentoGrid.Item>
-        <BentoGrid.Item wide>
+        <BentoGrid.Item title="Best Practices" wide>
           <div className="card">
-            <h2>Best Practices</h2>
             <p>
               Use neomorphism sparingly, focus on important UI elements, and
               ensure sufficient contrast for accessibility.
             </p>
           </div>
         </BentoGrid.Item>
-        <BentoGrid.Item>
+        <BentoGrid.Item title="Tools">
           <div className="card">
-            <h2>Tools</h2>
             <ul>
               <li>Figma</li>
               <li>Sketch</li>
@@ -88,7 +68,6 @@ function App() {
           </div>
         </BentoGrid.Item>
       </BentoGrid>
-      <SocialFloating />
     </div>
   );
 }
