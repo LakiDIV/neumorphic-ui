@@ -4,8 +4,6 @@ import SocialFloating from "./components/Footers/SocialFloating";
 import HamburgerBtn from "./components/HamburgerMenu/HamburgerBtn";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import BentoGrid from "./components/BentoGrid/BentoGrid";
-import InputField from "./components/InputField/InputField";
-import ClickyButton from "./components/ClickyButton/ClickyButton";
 
 function App() {
   return (
@@ -13,37 +11,77 @@ function App() {
       <ThemeToggle />
       <HamburgerBtn />
 
-      {/* Login Form */}
-      <div className="container embosed-flat">
+      {/* Input and Button */}
+      <div className="contanier embosed-flat">
         <div className="section light-concave">
-          <InputField placeholder="Email" />
-          <InputField placeholder="Password" type="password" />
-          <ClickyButton>LOGIN</ClickyButton>
+          <input
+            placeholder="Email"
+            className="light-concave"
+            type="text"
+            name=""
+            id=""
+          />
+          <input
+            placeholder="Password"
+            className="light-concave"
+            type="password"
+            name=""
+            id=""
+          />
+          <button className="btn-clicky">LOGIN</button>
         </div>
       </div>
 
       <h1>Neomorphic Design Showcase</h1>
       <BentoGrid>
-        {/* ... existing BentoGrid items ... */}
+        <BentoGrid.Item>
+          <h2>What is Neomorphism?</h2>
+          <p>
+            Neomorphism is a design trend that combines flat design with
+            skeuomorphism, creating a soft, extruded plastic look.
+          </p>
+        </BentoGrid.Item>
+        <BentoGrid.Item wide>
+          <h2>Key Characteristics</h2>
+          <ul>
+            <li>Soft shadows</li>
+            <li>Subtle contrast</li>
+            <li>Monochromatic color schemes</li>
+            <li>Minimalist approach</li>
+          </ul>
+        </BentoGrid.Item>
+        <BentoGrid.Item>
+          <h2>Pros</h2>
+          <ul>
+            <li>Modern and sleek appearance</li>
+            <li>Enhances UI depth</li>
+            <li>Creates a tactile feel</li>
+          </ul>
+        </BentoGrid.Item>
+        <BentoGrid.Item>
+          <h2>Cons</h2>
+          <ul>
+            <li>Accessibility challenges</li>
+            <li>Limited color palette</li>
+            <li>Potential for overuse</li>
+          </ul>
+        </BentoGrid.Item>
+        <BentoGrid.Item wide>
+          <h2>Best Practices</h2>
+          <p>
+            Use neomorphism sparingly, focus on important UI elements, and
+            ensure sufficient contrast for accessibility.
+          </p>
+        </BentoGrid.Item>
+        <BentoGrid.Item>
+          <h2>Tools</h2>
+          <ul>
+            <li>Figma</li>
+            <li>Sketch</li>
+            <li>CSS generators</li>
+          </ul>
+        </BentoGrid.Item>
       </BentoGrid>
-
-      {/* New Showcase */}
-      <h2>Reusable Components Showcase</h2>
-      <div className="showcase-container">
-        <div className="showcase-item">
-          <h3>Input Fields</h3>
-          <InputField placeholder="Username" />
-          <InputField placeholder="Email" type="email" />
-          <InputField placeholder="Password" type="password" />
-        </div>
-        <div className="showcase-item">
-          <h3>Clicky Buttons</h3>
-          <ClickyButton>Submit</ClickyButton>
-          <ClickyButton>Cancel</ClickyButton>
-          <ClickyButton>Reset</ClickyButton>
-        </div>
-      </div>
-
       <SocialFloating />
     </div>
   );
